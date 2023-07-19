@@ -1,0 +1,91 @@
+.Body {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.Input-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: 36px;
+}
+
+.Input-textbox {
+    width: 230px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.Button-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.Download-button {
+    width: 477px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+}
+
+.Image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+
+    margin-top: 36px;
+}
+
+.Image {
+    width: 477px;
+    height: 268px;
+    flex-shrink: 0;
+
+}
+
+.Text-image {
+    position: absolute;
+    color: #FFF;
+    font-family: Impact;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+.Text-image-top {
+    top: 16px;
+    position: absolute;
+
+    -webkit-text-stroke: 1.5px black;
+    color: #FFF;
+    font-family: Impact;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.Text-image-buttom {
+    bottom: 16px;
+    position: absolute;
+
+    -webkit-text-stroke: 1.5px black;
+    color: #FFF;
+    font-family: Impact;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
