@@ -6,21 +6,26 @@ import html2canvas from 'html2canvas';
 import { useState } from 'react';
 
 export default function Body() {
-    const handleClick = async () => {
+    const handleClickDownload = async () => {
         const now = new Date();
         const timeToString = now.toLocaleString();
 
         const imgWithText = document.querySelector<HTMLElement>('.Image-div');
         if (!imgWithText) return;
-        console.log(imgWithText);
+        // console.log(imgWithText);
 
         const canvas = await html2canvas(imgWithText);
         const dataURL = canvas.toDataURL('image/png');
         downloadjs(dataURL, `meme_img_${timeToString}.png`, 'image/png');
     };
 
+    const handleClickChangeImage = async() => {
+
+    };
+
     const [prompt1, setPrompt1] = useState('');
     const [prompt2, setPrompt2] = useState('');
+    // const [img, setImg] = useState();
 
     return (
         <div className='Body'>
@@ -31,7 +36,7 @@ export default function Body() {
                 </div>
                 
                 <div className='Button-div'>
-                    <Button type="primary" className='Download-button' onClick={handleClick}>Get a new meme image  🖼</Button>
+                    <Button type="primary" className='Change-image-button' onClick={handleClickChangeImage}>Get a new meme image  🖼</Button>
                 </div>
 
                 <div className='Image-div'>
@@ -39,6 +44,9 @@ export default function Body() {
 
                     <div className='Text-image-top'>{prompt1.toUpperCase()}</div>
                     <div className='Text-image-buttom'>{prompt2.toUpperCase()}</div>
+                </div>
+                <div className='Button-div'>
+                    <Button type="primary" className='Download-button' onClick={handleClickDownload}>Download meme</Button>
                 </div>
             </div>
         </div>

@@ -21,15 +21,24 @@
 
 .Button-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     margin-top: 15px;
 }
 
-.Download-button {
+.Change-image-button {
     width: 477px;
     height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+}
+
+.Download-button {
+    width: 200px;
+    height: 30px;
     flex-shrink: 0;
 
     border-radius: 5px;
