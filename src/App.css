@@ -3,7 +3,7 @@
 
 .Main {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   height: 100vh;
 
@@ -12,6 +12,6 @@
 
 .App {
   width: 550px;
-  height: 550px;
+  /* height: 550px; */
   background: #FFF;
 }

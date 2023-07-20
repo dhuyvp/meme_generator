@@ -1,5 +1,5 @@
 import './Header.css'
-import logo from './logo/Troll Face.svg'
+import logo from './images/Troll Face.svg'
 
 export default function Header() {
     return (

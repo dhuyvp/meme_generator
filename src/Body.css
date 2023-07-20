@@ -57,7 +57,7 @@
 
 .Image {
     width: 477px;
-    height: 268px;
+    /* height: 268px; */
     flex-shrink: 0;
 
 }
